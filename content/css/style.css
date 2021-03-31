@@ -1,7 +1,9 @@
+/*Config geral*/
 *{
     color: #f7f7f7f7;
     font-size: 16px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 body{
     background-color: #131C25;
@@ -16,7 +18,7 @@ ul{
 
 
 
-
+/*Header*/
 
 .header{
     background-color: black;
@@ -98,7 +100,7 @@ ul{
     cursor: pointer;
 }
 
-
+/*Main*/
 .main-container{
     width: 100%;
     height: 100%;
@@ -118,6 +120,7 @@ main{
 }
 .about{
     margin-top: 50px;
+    border-bottom: 1px solid #f7f7f7;
 }
 .p-container, .about-links{
     text-align: center;
@@ -184,3 +187,50 @@ main{
     font-weight: bolder;
     padding: 12px 56px;
 }
+
+/*Icon de redes socias*/
+.about-links{
+    width: 100%;
+}
+.about-links > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.about-links > ul > li{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.sociais{
+    padding: 0.6em;
+    background-color: #ffb705;
+    border-radius: 50%;
+    font-size: 18px;
+
+    transition: color 0.2s;
+}
+.sociais:hover{
+    background-color: #f7f7f7;
+    color: #E0A800;
+}
+
+/*Não é uma entrevista*/
+
+#links-p{
+    display: inline-block;
+    padding: 6px;
+
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+ #links-p:hover{
+    padding: 6px;
+    background-color: #E0A800;
+    font-weight: 600;
+    letter-spacing: 2px;
+ }
