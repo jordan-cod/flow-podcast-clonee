@@ -1,16 +1,18 @@
 /*Config geral*/
 *{
-    color: #f7f7f7f7;
+    
     font-size: 16px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
 body{
     background-color: #131C25;
+    color: #f7f7f7f7;
 }
 a{
     text-decoration: none;
     transition: color 0.2s linear;
+    color: #f7f7f7f7;
 }
 ul{
     list-style: none;
@@ -234,3 +236,46 @@ main{
     font-weight: 600;
     letter-spacing: 2px;
  }
+
+ /*Section de videos*/
+.videos > h2,  .videos > p{
+     text-align: center;
+ }
+.videos > h2{
+     font-size: 2.1rem;
+     margin-top: 40px;
+     margin-bottom: 0;
+ }
+.videos > p{
+     font-size: 1.1rem;
+     font-weight: 100;
+     text-transform: uppercase;
+
+     margin-top: 12px;
+ }
+
+ /*Cards*/
+
+ .cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+ }
+ .card{
+     width: 100%;
+     height: 100%;
+     background-color: #f7f7f7;
+ }
+
+ .tumb > img{
+     max-width: 100%;
+     width: 100%;
+     border-radius: 24px;
+ }
+ .card-main{
+     margin: 5px;
+ }
+.card-main, .card-main a{
+    color: black;
+}
+
