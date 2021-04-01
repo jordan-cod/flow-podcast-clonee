@@ -120,6 +120,10 @@ main{
     display: flex;
     justify-content: center;
 }
+.img-banner-1 > img{
+    max-width: 100%;
+
+}
 .about{
     margin-top: 50px;
     border-bottom: 1px solid #f7f7f7;
@@ -260,6 +264,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3%;
+    height: 2730.190px; /*Gambiarra, n faço a minima ideia se funciona direito. Funcionou aqui*/
  }
  .card{
      width: 100%;
@@ -347,4 +352,76 @@ main{
 .card-footer p{
     font-size: 0.8rem;
     margin-left: 10px;
+}
+.ver-mais{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ver-mais > a{
+    border: 1px solid #FFB705;
+    border-radius: 5px;
+
+    color: #FFB705;
+    padding: 8px 20px;
+
+    text-transform: uppercase;
+
+    transition-property: background-color, color;
+}
+.ver-mais > a:hover{
+    background-color: #FFB705;
+    border-radius: 5px;
+
+    color: #131C25;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+
+    margin-top: 25px;
+    margin-bottom: 0;
+
+    border-top: 1px solid #f7f7f7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #111111;
+}
+.email > p > spam{
+    color: #FFB705;
+}
+.email > p{
+    margin: 0;
+}
+.footer-links > p{
+    margin-top: 5px;
+    margin: 0;
+}
+.footer-links > p > a:hover{
+    color: #FFB705;
+}
+.footer-sociais  > ul{
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.footer-sociais  > ul > li{
+    margin: 0px 10px;
+    color: #FFB705;
+}
+.footer-sociais > ul > li > a{
+    color: #FFB705;
+    font-size: 1.3rem;
+}
+.footer-sociais > ul > li > a:hover{
+    color: #f7f7f7;
 }
