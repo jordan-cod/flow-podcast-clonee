@@ -558,3 +558,19 @@ footer{
         display: block;
   }
 }
+@media (max-width: 320px){
+    .about-links > ul > li{
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+
+
+
+
+
+
+
+
+ 
