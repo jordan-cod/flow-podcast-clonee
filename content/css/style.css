@@ -40,6 +40,9 @@ ul{
     right: 0;
     left: 0;
 }
+.check{
+    display: none;
+}
 .header-esq > .logo{
     height: 88px;
 
@@ -60,10 +63,12 @@ ul{
 .header-esq > .menu{
     display: flex;
     align-items: center;
+    height: 88px;
 }
 .header-esq > .menu > ul{
     display: flex;
     flex-direction: row;
+    padding: 0;
 }
 .header-esq > .menu > ul > li{
     padding: 20px 35px 25px 35px;
@@ -166,16 +171,14 @@ main{
     margin: auto;
 }
 .about-live > div{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 45%;
+    display: flex;
+    justify-content: center;
     max-width: 100%;
     margin: auto;
-
     gap: 35px;
 }
 .btn-s > a{
-    max-width: 80%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,6 +189,20 @@ main{
     border: 1px solid #E0A800;
     padding: 10px 75px;
     border-radius: 12px;
+    transition: 0.2s linear;
+    transition-property: transform, background-color;
+}
+.btn-s > a:hover{
+    transform: scale(1.1);
+}
+.btn-1-1:hover{
+    background-color: #b53e3a;
+}
+.btn-1-2:hover{
+    background-color: #6441a5;
+}
+.btn-1-3:hover{
+    background-color: #4267B2;
 }
 .btn-1{
     justify-self: right;
@@ -219,6 +236,7 @@ main{
 .sociais:hover{
     background-color: #f7f7f7;
     color: #E0A800;
+    transform: scale(1.1);
 }
 
 /*Não é uma entrevista*/
@@ -296,7 +314,9 @@ main{
 .card-main > p{
     line-height: 21px;
 }
-
+.card-footer{
+    border-radius: 0px 0px 5px 5px;
+}
 .btn-card{
     width: 100%;
 }
@@ -427,14 +447,19 @@ footer{
     color: #f7f7f7;
 }
 
-
+/*MEDIA QUERY*/
 @media (max-width: 1200px){
+    /*Mudando a grid de videos pra 2 colunas*/
   .cards-container{
       display: grid;
       grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 1000px){
+    *{
+        font-size:13px ;
+    }
+    /*Mudando a grid de links pra 3 colunas*/
     .about-live > div{
         display: grid;
         grid-row: 1fr 1fr 1fr;
@@ -450,8 +475,32 @@ footer{
         max-width: 100%;
         width: 100%;
     }
+    /*Mudando o footer de linhas para colunas*/
+    footer{
+        height: auto;
+    }
+    .footer-links > p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-links > p > a{
+        margin: 5px 0px;
+        font-weight: 500;
+    }
+    .footer-links > p > span{
+        display: none;
+    }
   }
 @media (max-width: 992px){
+    .about{
+        width: 80%;
+        margin: auto;
+    }
+    .p-container > h1{
+        font-size: 2.2rem;
+    }
+    /*Mudando a grid de videos pra 1 coluna*/
     .cards-container{
         display: grid;
         grid-template-columns: 1fr;
