@@ -31,7 +31,14 @@ ul{
     align-items: center ;
 
     width: 100%;
+    max-width: 100%;
     height: 88px;
+
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 .header-esq > .logo{
     height: 88px;
@@ -110,7 +117,7 @@ ul{
     display: flex;
     justify-content: center;
 
-    margin-top: 20px;
+    margin-top: 110px;
 }
 main{
     width: 92%;
@@ -155,45 +162,37 @@ main{
     letter-spacing: 3px;
 }
 .about-live{
-    width: 34%;
-    height: 61px;
-
-    margin: auto;
-    display: flex;
-}
-.btn-s{
-    width: 40%;
-    text-align: center;
-    align-self: center;
-}
-.btn-live{
     width: 100%;
-    padding: 9px 50px;
-    border: 1px solid orange;
-    border-radius: 10px;
+    margin: auto;
 }
-.btn-1-1, .btn-1-2, .btn-1-3{
-    font-weight: 550;
-    text-transform: uppercase;
-    transition: 0.2s linear;
-    transition-property: background-color transform;
-}
-.btn-1-1:hover{
-    background-color: #ff0000;
-    font-weight: bolder;
-    padding: 12px 56px;
-}
-.btn-1-2:hover{
-    background-color: #6441a5;
-    font-weight: bolder;
-    padding: 12px 56px;
-}
-.btn-1-3:hover{
-    background-color: #4267B2;
-    font-weight: bolder;
-    padding: 12px 56px;
-}
+.about-live > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 45%;
+    max-width: 100%;
+    margin: auto;
 
+    gap: 35px;
+}
+.btn-s > a{
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin: auto;
+
+    border: 1px solid #E0A800;
+    padding: 10px 75px;
+    border-radius: 12px;
+}
+.btn-1{
+    justify-self: right;
+}
+.btn-3{
+    justify-self: left;
+}
 /*Icon de redes socias*/
 .about-links{
     width: 100%;
@@ -202,6 +201,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 0;
 }
 .about-links > ul > li{
     margin-right: 10px;
@@ -264,7 +264,8 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3%;
-    height: 2730.190px; /*Gambiarra, n faço a minima ideia se funciona direito. Funcionou aqui*/
+    row-gap: 40px;
+    height: auto; /*Gambiarra, n faço a minima ideia se funciona direito. Funcionou aqui*/
  }
  .card{
      width: 100%;
@@ -425,3 +426,34 @@ footer{
 .footer-sociais > ul > li > a:hover{
     color: #f7f7f7;
 }
+
+
+@media (max-width: 1200px){
+  .cards-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 1000px){
+    .about-live > div{
+        display: grid;
+        grid-row: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        width: 100%;
+        gap: 20px;
+    }
+    .btn-s{
+        width: 100%;
+    }
+    .btn-s a{
+        max-width: 100%;
+        width: 100%;
+    }
+  }
+@media (max-width: 992px){
+    .cards-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
