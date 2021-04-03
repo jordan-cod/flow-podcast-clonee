@@ -1,0 +1,61 @@
+.header-esq > .menu > ul > :first-child{
+    border-bottom: none;
+}
+.header-esq > .menu > ul > :nth-child(2){
+    border-bottom: 2px solid #FFB705;
+}
+
+/*Banner da loja*/
+
+#banner-loja{
+    display: flex;
+    justify-content: center;
+}
+#banner-loja img{
+    max-width: 100%;
+}
+/*Loja*/
+/*Descrição*/
+.caminho-loja{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.caminho-loja > p{
+    text-transform: uppercase;
+}
+
+/*Produto*/
+.produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 35px;
+}
+.produto-border{
+    border: 1px solid #FFB705;
+}
+.produto-border:hover{
+    background-color: #FFB705;
+}
+
+.produto-1-img img{
+    width: 100%;
+    max-width: 100%;
+}
+.descricao-produto{
+    text-align: center;
+    text-transform: uppercase;
+}
+.descricao-produto:hover{
+    color: #131C25;
+}
+.descricao-produto > :first-child{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 10px 0px 10px 0px;
+}
+.descricao-produto > :nth-child(2){
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
