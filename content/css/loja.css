@@ -23,6 +23,9 @@
 .caminho-loja > p{
     text-transform: uppercase;
 }
+.caminho-loja > p > a:hover{
+    text-decoration: underline;
+}
 
 /*Produto*/
 .produtos{

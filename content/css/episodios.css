@@ -1,0 +1,6 @@
+.header-esq > .menu > ul > :first-child{
+    border-bottom: none;
+}
+.header-esq > .menu > ul > :nth-child(3){
+    border-bottom: 2px solid #FFB705;
+}
