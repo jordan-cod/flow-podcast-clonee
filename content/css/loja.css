@@ -36,7 +36,9 @@
 .produto-border:hover{
     background-color: #FFB705;
 }
-
+.produto-border:hover, .produto-border a:hover{
+    color: #131C25;
+}
 .card-prod img{
     width: 100%;
     max-width: 100%;
@@ -58,4 +60,26 @@
     font-size: 2rem;
     margin: 0;
     margin-bottom: 20px;
+}
+
+
+
+/*Media query*/
+@media (max-width: 992px){
+    .produtos{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 35px;
+    }
+}
+@media (max-width: 767px){
+    .produtos{
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+}
+@media (max-width: 575px){
+    .produtos{
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
 }
