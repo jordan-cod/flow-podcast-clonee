@@ -89,6 +89,9 @@ ul{
     color: black;
 
 }
+.new-menu:last-child{
+    cursor: pointer;
+}
 .new-menu a:hover{
     background-color: #E0A800;
 }
