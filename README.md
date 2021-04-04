@@ -8,3 +8,15 @@
 </ul>
 
 <p>O projeto está em constante atualização, seja adicionado ou retirando linhas de código.</p>
+
+
+
+-Lista de tarefas do projeto -
+<H3>Páginas de navegção.</H3>
+- [x] Home
+- [x] Loja
+- [x] Episódios
+- [x] Concursos
+- [x] Membros
+
+
