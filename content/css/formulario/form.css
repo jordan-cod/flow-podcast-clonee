@@ -15,21 +15,31 @@ form, form div{
 .form-container{
     
     position: absolute;
+    top: 0;
     width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
     display: flex;
     justify-content: center;
     align-self: center;
+    z-index: 9;
 
     color: black;
     
+}
+.form-container:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
 }
 
 .form-header{
     width: 1100px;
     height: 23px;
     background-color: #FFB709;
-    position: absolute;
-    top: 0;
 
     border-radius: 5px 5px 0px 0px;
 }
@@ -49,12 +59,12 @@ form, form div{
     background-color: #fff;
     padding-top: 23px;
 
-    display: none;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 0px 0px 5px 5px;
 }
 .login, .signup{
     border: 1px solid #FFB709;
