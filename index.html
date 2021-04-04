@@ -10,10 +10,57 @@
 
     <link rel="stylesheet" type="text/css" href="./content/css/normalize.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="./content/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./content/css/formulario/form.css"/>
 
     <script src="https://kit.fontawesome.com/86ae136dd1.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
+    <div class="form-container">
+        
+        <div class="form">
+            <div class="form-header">
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="login">
+                <div class="form-title">
+                    <h1>Login</h1>
+                    <p>Preencha com seus dados de cadastro !</p>
+                </div>
+                <div class="form-form">
+                    <form action="#" method="GET">
+                        <div class="campos">
+                            <input type="text" placeholder="E-mail, Username, CPF ou CNPJ" required class="input-txt">
+                            <input type="password" placeholder="Senha" required class="input-txt">
+                            <a href="#">Esqueceu sua senha ?</a>
+                            <input type="submit" value="Continuar" class="input-btn">
+                        </div>
+                        
+                        
+                    </form>
+                </div>
+            </div>
+
+            <div class="signup">
+                <div class="form-title">
+                    <h1>Cadastre-se</h1>
+                    <p>Comece com seu endereço de e-mail!</p>
+                </div>
+                <div class="form-form">
+                    <form action="#" method="GET">
+                        <input type="text" placeholder="Digite seu e-mail" required class="input-txt">
+                        <div class="termos">
+                            <input type="checkbox" name="sign-check" id="sign-check"  required>
+                            <label for="sign-check">Concordo com os <a href="#">Termos de serviço.</a></label>                                                                                    
+                        </div>
+                        
+                        <input type="submit" value="Cadastrar" class="input-btn input-sign" required>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="header">
 
         <div class="header-esq">
@@ -36,7 +83,7 @@
             <a href="./content/pages/flowcoins.html">Flowcoins</a>
 
             <div class="perfil">
-                <i class="fas fa-user-circle" title="Fazer Login"></i>
+                <i class="fas fa-user-circle" id="js-btn"  title="Fazer Login"></i>
             </div>
         </div>
         
@@ -589,6 +636,6 @@
             <p><spam>Contato:</spam> contato@qualquerumae.com.br</p>
         </div>
     </footer>
-    <script src="./content/js/index.js"></script>
+    <script src="./content/js/formulario.js"></script>
 </body>
 </html> 
