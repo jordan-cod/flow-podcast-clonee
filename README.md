@@ -1,4 +1,4 @@
-<h1>Flow Podcast</h1>
+# Flow Podcast
 <p>Estou fazendo esse projeto com o objetivo de <b>clonar</b> o site do <a href="https://flowpodcast.com.br/">Flow Podcast</a> do zero, utilizando meus conhecimentos em HTML  e CSS.</p>
 <br>
 <h2>O que vou ganhar com isso ?</h2>
