@@ -1,10 +1,30 @@
-# Flow Podcast
-<p>Estou fazendo esse projeto com o objetivo de <b>clonar</b> o site do <a href="https://flowpodcast.com.br/">Flow Podcast</a> do zero, utilizando meus conhecimentos em HTML  e CSS.</p>
-<br>
-<h2>O que vou ganhar com isso ?</h2>
-<ul>
-<li>Irei adquirir mais conhecimentos práticos em HTML e principalmente em CSS.</li>
-<li>Irei adquirir conhecimentos em JavaScript, linguagem a qual ainda não domino.</li>
-</ul>
+<p align=center><img align=center src="https://cdn.flowpodcast.com.br/assets/images/logos/logo-header.png"></p>
+<h1 align=center>Flow Podcast Clone 🎙️</h1>
+<p align=center>Projeto de clone do site do <a href="https://flowpodcast.com.br/">Flow Podcast</a>.
+  
+<p align=center>
+  <img src="https://img.shields.io/github/followers/jordan-cod?color=green&label=Seguidores&style=flat-square">
+  <img src="https://img.shields.io/github/forks/jordan-cod/flow-podcast-clonee?color=green&label=Forks&style=flat-square">
+  <img src="https://img.shields.io/website?down_message=Offline&style=flat-square&up_message=Online&url=https%3A%2F%2Fjordan-cod.github.io%2Fflow-podcast-clonee%2F">
+<p>
 
-<p>O projeto está em constante atualização, seja adicionado ou retirando linhas de código.</p>
+
+### Objetivos do projeto
+<p>O objetivo é clonar o site utilizando as linguagens que conheço atualmente, e, se necessário, novas linguagens.</p>
+<p>Atualmente sou estudante de Sistemas para Internet, e como objetivo de estudo, resolvi clonar alguns sites. O primeiro está sendo o <a href="https://flowpodcast.com.br/">Flow</a>.</p>
+
+
+### Andamento do projeto
+#### Páginas 
+- [x] Home
+- [x] Loja
+- [x] Episódios
+- [ ] Concursos
+- [ ] Membros
+- [ ] Flowcoins
+
+#### Back End
+- [ ] Cadastro de usuários
+
+
+<h4 align="center">Veja o <a href="https://jordan-cod.github.io/flow-podcast-clonee/">site<a> no GitHub Pages</h4>
