@@ -23,4 +23,4 @@
 - [ ] Membros
 - [ ] Flowcoins
 
-<h4 align="center">Veja o <a href="https://jordan-cod.github.io/flow-podcast-clonee/">site<a> no GitHub Pages</h4>
+<h4 align="center">Veja o <a href="https://jordan-cod.github.io/flow-podcast-clonee/" target="_blank">site<a> no GitHub Pages</h4>
